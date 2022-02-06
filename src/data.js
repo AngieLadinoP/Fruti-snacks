@@ -25,9 +25,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients: ["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Durazno"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1h6gSdd2ZjOWjiqnPZJHhRXF06FfZdr_H",
     color: p2,
   },
   {
@@ -47,9 +47,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Durazno"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1-h2Z4r9LfW428gMx_vcHxzAAn3BUoh7B",
     color: p2,
   },
   {
@@ -69,9 +69,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients: ["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Mora"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1ITc0rDt3af6-RcyHXjHe5w5SmhXRx9lv",
     color: p2,
   },
   {
@@ -82,7 +82,7 @@ export const products = [
     subcategory: "tradicional",
     price: 1000,
     shape: "Corazón",
-    flavor: "",
+    flavor: "Natural",
     servings: 1,
     measurements: {
       length: 7.5,
@@ -91,9 +91,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1vWQ2jYcHI3Ys9nBkn8X0ahnofg3x_riT",
     color: p1,
   },
   {
@@ -104,7 +104,7 @@ export const products = [
     subcategory: "tradicional",
     price: 1000,
     shape: "Redonda",
-    flavor: "",
+    flavor: "Natural",
     servings: 1,
     measurements: {
       length: 6,
@@ -113,9 +113,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=14zjLuW7QhN5XdiLgOBNO6L___CDMfJfM",
     color: p1,
   },
   {
@@ -135,9 +135,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Mora"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1uE4kHbiWsUnYbu9pbzzXWQLY0Z71_PAN",
     color: p2,
   },
   {
@@ -147,7 +147,7 @@ export const products = [
     type: "Muffin",
     subcategory: "Muffins de banano",
     price: 1000,
-    shape: "",
+   shape: "Tradicional",
     flavor: "Banano",
     servings: 1,
     measurements: {
@@ -157,9 +157,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients: ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1M5XLyFQvB_Mc8Geda9brZzI5GdNpDXex",
     color: p3,
   },
   {
@@ -169,7 +169,7 @@ export const products = [
     type: "Muffin",
     subcategory: "Muffins de banano",
     price: 1000,
-    shape: "",
+   shape: "Tradicional",
     flavor: "Banano",
     servings: 1,
     measurements: {
@@ -179,9 +179,9 @@ export const products = [
     },
     size: "Pequeño",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1D4JgsYlP3apYStIcKkOe9yx6ATVcFG5k",
     color: p3,
   },
   {
@@ -191,7 +191,7 @@ export const products = [
     type: "Muffin",
     subcategory: "Muffins de banano",
     price: 1000,
-    shape: "",
+   shape: "Tradicional",
     flavor: ["Banano", "Nuez"],
     servings: 1,
     measurements: {
@@ -201,9 +201,9 @@ export const products = [
     },
     size: "Pequeño",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1WAr_vVG84Svp5f9NwURyZxhGAcVlj2wc",
     color: p3,
   },
   {
@@ -213,7 +213,7 @@ export const products = [
     type: "Muffin",
     subcategory: "Muffins de banano",
     price: 1000,
-    shape: "",
+   shape: "Tradicional",
     flavor: ["Banano", "Nuez"],
     servings: 1,
     measurements: {
@@ -223,9 +223,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1Xn1r5WD00Tq55PbwaPAyF2krF24jKcH4",
     color: p3,
   },
   {
@@ -235,7 +235,7 @@ export const products = [
     type: "Pan",
     subcategory: "Panes de banano",
     price: 1000,
-    shape: "",
+   shape: "Rectangular",
     flavor: ["Banano", "Nuez"],
     servings: 10,
     measurements: {
@@ -245,9 +245,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1lsTFMClRqlJcs0pvwHlb8V8RpTGxk8gT",
     color: p4,
   },
   {
@@ -257,7 +257,7 @@ export const products = [
     type: "Pan",
     subcategory: "Panes de banano",
     price: 5730,
-    shape: "",
+   shape: "Molde",
     flavor: ["Banano", "Nuez"],
     servings: 10,
     measurements: {
@@ -267,9 +267,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1EYregztGNQ3itvmDNPkeWAlqTT0gJI-1",
     color: p4,
   },
   {
@@ -279,7 +279,7 @@ export const products = [
     type: "Pan",
     subcategory: "Panes de banano",
     price: 1540,
-    shape: "",
+   shape: "Rectangular",
     flavor: "Banano",
     servings: 10,
     measurements: {
@@ -289,9 +289,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1FEy-oPYS-utfej2AJSw2amYBqOt85KnO",
     color: p4,
   },
   {
@@ -301,7 +301,7 @@ export const products = [
     type: "Pan",
     subcategory: "Panes de banano",
     price: 100,
-    shape: "",
+   shape: "Molde",
     flavor: "Banano",
     servings: 10,
     measurements: {
@@ -311,9 +311,9 @@ export const products = [
     },
     size: "Grande",
     quantity: "Individual",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients: ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=19POJQXU4RbXGtCQj1cMGPsC6jD0RTmXz",
     color: p4,
   },
   {
@@ -324,7 +324,7 @@ export const products = [
     subcategory: "Galletas tradicionales",
     price: 1850,
     shape: "Redonda",
-    flavor: "",
+    flavor: "Natural",
     servings: 10,
     measurements: {
       length: 3,
@@ -333,9 +333,9 @@ export const products = [
     },
     size: "Pequeño",
     quantity: "Paquete",
-    ingredients: ["Harina", "Azúcar"],
+    ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=1A7ml7kRcJz0g0Doc7oraEKcztyOSc7M4",
     color: p1,
   },
   {
@@ -346,7 +346,7 @@ export const products = [
     subcategory: "Galletas tradicionales",
     price: 12545,
     shape: "Corazón",
-    flavor: "",
+    flavor: "Natural",
     servings: 10,
     measurements: {
       length: 3.5,
@@ -357,22 +357,84 @@ export const products = [
     quantity: "Paquete",
     ingredients: ["Harina", "Azúcar"],
     image:
-      "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+      "https://drive.google.com/uc?export=view&id=19iDH7vUxKdpRX2apO3IHP7thxp5mhElE",
     color: p1,
   },
 ];
 
-export const categories = [
+export const category = [
   {
     id: 1,
     name: "Galletas de mantequilla",
-    url: "https://drive.google.com/uc?export=view&id=1N8CbwWV36OjOdckfanTGw7oKGzxVXBv5",
+    url: "https://drive.google.com/uc?export=view&id=1mvyqP6mZMlU9yq16wuLKjid0PK7bjPg8",
     color: c1,
   },
   {
     id: 2,
     name: "Muffins y panes de banano",
-    url: "https://drive.google.com/uc?export=view&id=1g9Yz-4uz0X8frPEuZXR764O3ZPiyTyL_",
+    url: "https://drive.google.com/uc?export=view&id=1nZbwJonf-S21mIlwJtL5W6Ha5T8mFd8Q",
     color: c2,
   },
 ];
+
+export const cookies=[
+  {
+    id: 1,
+    category:  "Galletas de mantequilla",
+    name: "Galletas tradicionales",
+    url: "https://drive.google.com/uc?export=view&id=1uv06aoe3TB-e1bX9zy3VGPFS1wpQKh-N",
+    color: c1,
+  },
+  {
+    id: 2,
+    category:  "Galletas de mantequilla",
+    name: "Galletas con mermelada",
+    url: "https://drive.google.com/uc?export=view&id=1DpZPOLnkr4_Q09CxCqWjcfYTaKhhBwH4",
+    color: c2,
+  },
+];
+
+export const muuffinsAndBreads=[ 
+  {
+    id: 1,
+    category:  "Muffins y panes de banano",
+    name: "Muffins de banano",
+    url: "https://drive.google.com/uc?export=view&id=1l7FoTLpmVwPGYGkBnpOKm1miQ0_NzhU2",
+    color: c1,
+  },
+  {
+    id: 2,
+    category:  "Muffins y panes de banano",
+    name: "Panes de banano",
+    url: "https://drive.google.com/uc?export=view&id=1B4K4IL7SN_WaX38qH7GAbcY4RS0JILAN",
+    color: c2,
+  },
+]
+
+export const galery = [
+  {
+    id: 1,
+    title: "Nuestros productos",
+    url: "https://drive.google.com/uc?export=view&id=1RYG9fNYeik3bhRSgA429X8h8Hfp7AIfS",
+    active: true,
+  },
+  {
+    id: 2,
+    title: "Galletas tradicionales redondas",
+    url: "https://drive.google.com/uc?export=view&id=1P3_rGf9F2nQZZXgpK40S5poTCZMRFeL9",
+    active: false,
+  }, 
+  {
+    id: 3,
+    title: "Galletas y muffins",
+    url: "https://drive.google.com/uc?export=view&id=1hYKvEjcoapy1i3A3M76KKoisEmA60h-3",
+    active: false,
+  },
+  
+  {
+    id: 4,
+    title: "Galletas tradicionales corazón",
+    url: "https://drive.google.com/uc?export=view&id=1rF64SCqjArODYjwVqtuk4whfLnr0axxl",
+    active: false,
+  },
+]

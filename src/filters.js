@@ -20,7 +20,7 @@ export const filterByQuantity = (value) =>
     (product) => product.flavor === value || product.quantity === value
   );
 
-/* Filter by Quantity */
+/* Filter by Size */
 export const filterBySize = (value) =>
   products.filter(
     (product) => product.flavor === value || product.size === value

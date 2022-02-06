@@ -1,15 +1,17 @@
 import React from "react";
 import "./Products.css";
-import { products, categories } from "../../data.js";
-import CategoryCard from "./CategoryCard/CategoryCard.jsx";
+import CategoryCard from "./Category/CategoryCard/CategoryCard.jsx";
 import Product from "./Product/Product.jsx";
-const Products = () => {
+
+const Products = (props) => {
+  const{ categories,products}=props
   return (
-    <section className="Products">
-      <h2 className="products__title title">Categorías</h2>
+    <section className="Prosducts">
+      <h2 className="products__title title">Producto</h2>
       <div className="products__categories">
         {categories.map((category) => (
           <CategoryCard
+            id={category.id}
             key={category.id}
             name={category.name}
             img={category.url}

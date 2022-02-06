@@ -3,7 +3,7 @@ import "./Cart.css";
 const Cart = () => {
   return (
     <div>
-      <h1>Carrito</h1>
+      <h1>Carrito de compras</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

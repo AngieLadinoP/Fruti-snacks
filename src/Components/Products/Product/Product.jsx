@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 const Product = (props) => {
   const { id, image, name, price, color } = props;
   return (
-    <Link to={`/productos/${id}`}>
-      <div className="product" style={{ backgroundColor: `${color}` }}>
+    <div className="product">
+    <Link to={`/productos/${id}`} className="product__link link">
+      <div className="product__card" style={{ backgroundColor: `${color}` }}>
         <img src={image} alt={name} className="product__img" />
         <h3 className="product__name subtitle">{name}</h3>
         <p className="product__price">{`$ ${price} UND`}</p>
@@ -14,6 +15,7 @@ const Product = (props) => {
         </div>
       </div>
     </Link>
+    </div>
   );
 };
 

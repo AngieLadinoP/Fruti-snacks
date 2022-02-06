@@ -5,27 +5,25 @@ const CardDetails = (props) => {
 const {data}=props
   return (
     <div className="product-details">
-        <div className="card-details" style={{ backgroundColor: `${data.color}` }}>
-            <img src={data.image} alt={data.name} className="card-details__img" />
-            <h2 className="card-details__name subtitle">{data.name}</h2>
-            <p className="card-details__price">{`$ ${data.price} UND`}</p>
+        <div className="product-details__card" style={{ backgroundColor: `${data.color}` }}>
+            <img src={data.image} alt={data.name} className="product-details__card--img" />
+            <h2 className="product-details__card--name subtitle">{data.name}</h2>
+            <p className="product-details__card--price">{`$ ${data.price} UND`}</p>
         </div>
-        <div>
-        <h2 className="subtitle"> Especificaciones </h2>
-        <p>{`Forma: ${data.shape}`}</p>
-         <p>{`Sabor: ${data.flavor}`}</p>
-          <p>{`Porciones: ${data.servings}`}</p>
-          <p>{`Tamaño: ${data.size}`}</p>
-          <h3> Medidas </h3>
-          <ul>
-          <li>{`Largo: ${data.measurements.length} cm`}</li>
-          <li>{`Ancho: ${data.measurements.width} cm`}</li>
-          <li>{`Alto: ${data.measurements.height} cm`}</li>
-          </ul>
-          <h3>Ingredientes</h3>
-          <ul>
-            <li>{`${data.ingredients}`}</li>
-          </ul>
+        <div className="product-details__info">
+          <h2 className="product-details__info--title subtitle"> Especificaciones </h2>
+          <p><span className="bold">Forma:</span> {data.shape}</p> 
+          <p><span className="bold">Sabor:</span> {data.flavor} </p> 
+          <p><span className="bold">Porciones:</span> {data.servings}</p>
+          <p><span className="bold">Tamaño:</span> {data.size}</p>
+          <p className="bold"> Medidas:</p>
+          <p><span className="bold">- Largo:</span> {data.measurements.length} cm</p>
+          <p><span className="bold">- Ancho:</span> {data.measurements.width} cm</p>
+          <p><span className="bold">- Alto:</span> {data.measurements.height} cm </p>
+          <p className="bold">Ingredientes</p>
+          <p>{data.ingredients.map((item,index)=>
+          <li key={index}>{item}</li>
+          )}</p>
         </div>
     </div>
   )

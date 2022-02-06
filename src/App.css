@@ -19,9 +19,6 @@ gris #C3C3C3
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   position: relative;
   min-height: 100vh;
 }
@@ -29,7 +26,7 @@ body {
 /*--------Common styles---------*/
 /*Styles for rendered components*/
 .section {
-  margin: 100px auto auto;
+  margin: 160px auto  90px auto;
   display: flex;
   width: 90%;
   text-align: justify;
@@ -46,6 +43,15 @@ body {
   font-family: 'Poor Story', cursive;
   text-align: center;
   padding: 10px;
+}
+/* ---Styles for Link to ----- */
+.link {
+  text-decoration:none;
+  color:black;
+  margin:auto;
+  align-items:center;
+  justify-content:center;
+  display:flex;
 }
 
 
@@ -81,6 +87,18 @@ body {
   padding: 10px;
 }
 
+
+/* ------------Footer------------------ */
+.footer{
+  width:100%;
+  background-color:black;
+  color:#00A3E8;
+  text-align:center;
+  bottom:0;
+  left:0;
+  position:absolute;
+}
+
 /*------------------- Navigation-------------------------- */
 .navigation {
   background: black;
@@ -88,10 +106,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 0;
-  margin-left: 0;
-  position:sticky;
-  min-height: 100px;
+  margin:80px auto; 
+  position:fixed;
+  min-height: 60px;
 }
 
 .navigation__link {
@@ -111,15 +128,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40vh;
+  height: 300px;;
   flex: 0.5;
-  border-radius: 50px;
+  border-radius: 15px;
   position: relative;
-  margin: 0.5rem;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  margin: 2px;;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   cursor: pointer;
   transition: flex 0.3s;
   -webkit-transition: flex 0.3s;
@@ -130,19 +147,6 @@ body {
 
 .card.active {
   flex: 5;
-}
-
-.card h3 {
-  color: white;
-  position: absolute;
-  bottom: 2rem;
-  left: 1rem;
-  opacity: 0;
-  transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
 }
 
 /*-----------Home---------*/
@@ -182,6 +186,7 @@ body {
 }
 
 /* ------Products------------- */
+
 .products__categories {
   display: flex;
 }
@@ -195,7 +200,13 @@ body {
 }
 
 /*-------------Product--------*/
-.product {
+.product{
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.product__card {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -238,7 +249,9 @@ body {
   font-weight: bolder;
   margin: auto;
   font-size: 20px;
+
 }
+
 
 .product__cart-icon {
   font-size: 24px;
@@ -247,4 +260,56 @@ body {
 .product__cart-icon:hover {
   transform: scale(1.2);
 
+}
+
+
+/* --------CardDetails------- */
+.product-details{
+  width:90%;
+  display:flex;
+  display:block;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+}
+
+.product-details__card{
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 250px;
+  height: auto;
+}
+.product-details__card--img{
+  width: 200px;
+  height: 150px;
+  padding: 10px 0;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  display: flex;
+  margin: auto;
+}
+
+.product-details__card--price{
+  font-weight:bold;
+  font-size:20px;
+  padding:15px;
+  text-align:center;
+}
+
+.product-details__info--title{
+  color: #F92410;
+}
+.bold{
+  font-weight:bolder;
 }

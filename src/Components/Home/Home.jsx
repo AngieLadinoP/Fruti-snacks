@@ -1,6 +1,6 @@
 import React from "react";
 import ExpandingCards from "./ExpandingCards/ExpandingCards";
-import data from "./images.js";
+import {galery} from "../../data.js";
 
 import "./Home.css";
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         hoy es el sustento de sus creadores.
       </p>
       <div className="home__galery">
-        <ExpandingCards data={data} />
+        <ExpandingCards data={galery} />
       </div>
     </section>
   );
