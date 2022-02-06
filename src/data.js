@@ -1,11 +1,11 @@
-const p1 = "#FEF200";
-const p2 = "#69Fe00";
+const colorProd1 = "#FEF200";
+const colorProd2 = "#69Fe00";
 
-const p3 = "#00A3E8";
-const p4 = "#2349c5";
+const colorProd3 = "#00A3E8";
+const colorProd4 = "#2349c5";
 
-const c1 = `linear-gradient(135deg, ${p1} 50%,${p2} 50%)`;
-const c2 = `linear-gradient(135deg, ${p3} 50%,${p4} 50%)`;
+const colorCat1 = `linear-gradient(135deg, ${colorProd1} 50%,${colorProd2} 50%)`;
+const colorCat2 = `linear-gradient(135deg, ${colorProd3} 50%,${colorProd4} 50%)`;
 
 export const products = [
   {
@@ -13,7 +13,7 @@ export const products = [
     name: "Galleta redonda con mermelada de durazno",
     category: "Galletas de mantequilla",
     type: "Galleta",
-    subcategory: "con mermelada",
+    subcategory: "Galletas con mermelada",
     price: 1000,
     shape: "Redonda",
     flavor: "Durazno",
@@ -28,14 +28,14 @@ export const products = [
     ingredients: ["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Durazno"],
     image:
       "https://drive.google.com/uc?export=view&id=1h6gSdd2ZjOWjiqnPZJHhRXF06FfZdr_H",
-    color: p2,
+    color: colorProd2,
   },
   {
     id: 2,
     name: "Galleta corazón con mermelada de durazno",
     category: "Galletas de mantequilla",
     type: "Galleta",
-    subcategory: "con mermelada",
+    subcategory: "Galletas con mermelada",
     price: 1000,
     shape: "Corazón",
     flavor: "Durazno",
@@ -50,14 +50,14 @@ export const products = [
     ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Durazno"],
     image:
       "https://drive.google.com/uc?export=view&id=1-h2Z4r9LfW428gMx_vcHxzAAn3BUoh7B",
-    color: p2,
+    color: colorProd2,
   },
   {
     id: 3,
     name: "Galleta corazón con mermelada de mora",
     category: "Galletas de mantequilla",
     type: "Galleta",
-    subcategory: "con mermelada",
+    subcategory: "Galletas con mermelada",
     price: 1000,
     shape: "Corazón",
     flavor: "Mora",
@@ -72,14 +72,14 @@ export const products = [
     ingredients: ["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Mora"],
     image:
       "https://drive.google.com/uc?export=view&id=1ITc0rDt3af6-RcyHXjHe5w5SmhXRx9lv",
-    color: p2,
+    color: colorProd2,
   },
   {
     id: 4,
     name: "Galleta corazón tradicional",
     category: "Galletas de mantequilla",
     type: "Galleta",
-    subcategory: "tradicional",
+    subcategory: "Galletas tradicionales",
     price: 1000,
     shape: "Corazón",
     flavor: "Natural",
@@ -94,14 +94,14 @@ export const products = [
     ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1vWQ2jYcHI3Ys9nBkn8X0ahnofg3x_riT",
-    color: p1,
+    color: colorProd1,
   },
   {
     id: 5,
     name: "Galleta redonda tradicional",
     category: "Galletas de mantequilla",
     type: "Galleta",
-    subcategory: "tradicional",
+    subcategory: "Galletas tradicionales",
     price: 1000,
     shape: "Redonda",
     flavor: "Natural",
@@ -116,14 +116,14 @@ export const products = [
     ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=14zjLuW7QhN5XdiLgOBNO6L___CDMfJfM",
-    color: p1,
+    color: colorProd1,
   },
   {
     id: 6,
     name: "Galleta redonda con mermelada de mora",
     category: "Galletas de mantequilla",
     type: "Galleta",
-    subcategory: "con mermelada",
+    subcategory: "Galletas con mermelada",
     price: 1000,
     shape: "Redonda",
     flavor: "Mora",
@@ -138,7 +138,7 @@ export const products = [
     ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla","Azúcar pulverizada", "Mora"],
     image:
       "https://drive.google.com/uc?export=view&id=1uE4kHbiWsUnYbu9pbzzXWQLY0Z71_PAN",
-    color: p2,
+    color: colorProd2,
   },
   {
     id: 7,
@@ -160,7 +160,7 @@ export const products = [
     ingredients: ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1M5XLyFQvB_Mc8Geda9brZzI5GdNpDXex",
-    color: p3,
+    color: colorProd3,
   },
   {
     id: 8,
@@ -182,7 +182,7 @@ export const products = [
     ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1D4JgsYlP3apYStIcKkOe9yx6ATVcFG5k",
-    color: p3,
+    color: colorProd3,
   },
   {
     id: 9,
@@ -204,7 +204,7 @@ export const products = [
     ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1WAr_vVG84Svp5f9NwURyZxhGAcVlj2wc",
-    color: p3,
+    color: colorProd3,
   },
   {
     id: 10,
@@ -226,7 +226,7 @@ export const products = [
     ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1Xn1r5WD00Tq55PbwaPAyF2krF24jKcH4",
-    color: p3,
+    color: colorProd3,
   },
   {
     id: 11,
@@ -248,7 +248,7 @@ export const products = [
     ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1lsTFMClRqlJcs0pvwHlb8V8RpTGxk8gT",
-    color: p4,
+    color: colorProd4,
   },
   {
     id: 12,
@@ -270,7 +270,7 @@ export const products = [
     ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Nueces","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1EYregztGNQ3itvmDNPkeWAlqTT0gJI-1",
-    color: p4,
+    color: colorProd4,
   },
   {
     id: 13,
@@ -292,7 +292,7 @@ export const products = [
     ingredients:  ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1FEy-oPYS-utfej2AJSw2amYBqOt85KnO",
-    color: p4,
+    color: colorProd4,
   },
   {
     id: 14,
@@ -314,7 +314,7 @@ export const products = [
     ingredients: ["Harina", "Azúcar", "Mantequilla","Banano","Huevo","Polvo de hornear","Canela","Sal","Aceite vgetal","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=19POJQXU4RbXGtCQj1cMGPsC6jD0RTmXz",
-    color: p4,
+    color: colorProd4,
   },
   {
     id: 15,
@@ -336,7 +336,7 @@ export const products = [
     ingredients:["Harina", "Azúcar","Mantequilla","Huevo","Extracto de vainilla"],
     image:
       "https://drive.google.com/uc?export=view&id=1A7ml7kRcJz0g0Doc7oraEKcztyOSc7M4",
-    color: p1,
+    color: colorProd1,
   },
   {
     id: 16,
@@ -358,58 +358,51 @@ export const products = [
     ingredients: ["Harina", "Azúcar"],
     image:
       "https://drive.google.com/uc?export=view&id=19iDH7vUxKdpRX2apO3IHP7thxp5mhElE",
-    color: p1,
+    color: colorProd1,
   },
 ];
 
-export const category = [
+export const categories = [
   {
-    id: 1,
+    id: "c1",
     name: "Galletas de mantequilla",
     url: "https://drive.google.com/uc?export=view&id=1mvyqP6mZMlU9yq16wuLKjid0PK7bjPg8",
-    color: c1,
+    color: colorCat1,
   },
   {
-    id: 2,
+    id: "c2",
     name: "Muffins y panes de banano",
     url: "https://drive.google.com/uc?export=view&id=1nZbwJonf-S21mIlwJtL5W6Ha5T8mFd8Q",
-    color: c2,
+    color: colorCat2,
   },
 ];
 
-export const cookies=[
-  {
-    id: 1,
-    category:  "Galletas de mantequilla",
+export const subcategory1=[ {
+    id: "c11",
     name: "Galletas tradicionales",
     url: "https://drive.google.com/uc?export=view&id=1uv06aoe3TB-e1bX9zy3VGPFS1wpQKh-N",
-    color: c1,
+    color: colorProd1,
   },
   {
-    id: 2,
-    category:  "Galletas de mantequilla",
+    id: "c12",
     name: "Galletas con mermelada",
     url: "https://drive.google.com/uc?export=view&id=1DpZPOLnkr4_Q09CxCqWjcfYTaKhhBwH4",
-    color: c2,
+    color:  colorProd2,
   },
-];
+   ]
 
-export const muuffinsAndBreads=[ 
-  {
-    id: 1,
-    category:  "Muffins y panes de banano",
+export const subcategory2=[{
+    id: "c21",
     name: "Muffins de banano",
     url: "https://drive.google.com/uc?export=view&id=1l7FoTLpmVwPGYGkBnpOKm1miQ0_NzhU2",
-    color: c1,
+    color: colorProd3 ,
   },
   {
-    id: 2,
-    category:  "Muffins y panes de banano",
+    id: "c22",
     name: "Panes de banano",
     url: "https://drive.google.com/uc?export=view&id=1B4K4IL7SN_WaX38qH7GAbcY4RS0JILAN",
-    color: c2,
-  },
-]
+  color:   colorProd4,
+  }] 
 
 export const galery = [
   {
