@@ -3,10 +3,10 @@ import { useState } from "react";
 
 const SelectOptionSort = () => {
   const [optionValue, setOptionValue] = useState();
+  console.log(optionValue);
   const handleChange = (e) => {
     setOptionValue(e.target.value);
   };
-  console.log(optionValue);
   return (
     <select name="sort" onChange={handleChange}>
       <option value="sort">---Ordenar por precio---</option>

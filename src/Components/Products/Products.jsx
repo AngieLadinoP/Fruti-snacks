@@ -3,19 +3,18 @@ import "./Products.css";
 import CategoryCard from "./Category/CategoryCard/CategoryCard.jsx";
 import Product from "./Product/Product.jsx";
 import { useState, useEffect } from "react";
-import {
-  products,
-  categories,
-  subcategory1,
-  subcategory2,
-} from "../../data.js";
+import { categories, subcategory1, subcategory2 } from "../../data.js";
 import { useParams } from "react-router-dom";
-
-import Modal from "../Modal/Modal";
-
-import SelectOptionSort from "./SelectOptionSort";
+import { CartState } from "../../Context/Context.js";
+//import Modal from "../Modal/Modal";
+//import SelectOptionSort from "./SelectOptionSort";
 const Products = () => {
   const { id } = useParams();
+  const {
+    state: { products },
+    dispatch,
+  } = CartState();
+
   const [info, setInfo] = useState({
     title: "Productos",
     categoriesShown: categories,
@@ -71,10 +70,11 @@ const Products = () => {
         categoriesShown: categories,
         productsShown: products,
       });
-    }
+    } // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
-
-  const handleAddtoCart = () => console.log("soy el carrito y funciono");
+  const addToCart = (id) => {
+    dispatch({ type: "ADD_TO_CART", payload: id });
+  };
   return (
     <section className="Products">
       <h2 className="products__title title">{info.title}</h2>
@@ -91,7 +91,7 @@ const Products = () => {
             ))
           : null}
       </div>
-      <SelectOptionSort />
+      {/*   <SelectOptionSort /> */}
       <div className="products__list">
         {info.productsShown.map((product) => (
           <Product
@@ -101,7 +101,7 @@ const Products = () => {
             color={product.color}
             price={product.price}
             id={product.id}
-            addToCart={handleAddtoCart}
+            addToCart={addToCart}
           />
         ))}
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const CartProduct = (props) => {
   const { data, removeFromProduct, addToCart } = props;
-  const { id, name, price, quantity, image } = data;
+  const { id, name, price, amount, image } = data;
   return (
     <div className="cart-product">
       <h4 className="cart-product__name subtitle">{name}</h4>
@@ -23,7 +23,7 @@ const CartProduct = (props) => {
                 >
                   -
                 </button>
-                <p className="cart-product__quantity--value">{quantity}</p>
+                <p className="cart-product__quantity--value">{amount}</p>
                 <button
                   onClick={() => addToCart(id)}
                   className="cart-product__button cart-product__button--add"
@@ -35,7 +35,7 @@ const CartProduct = (props) => {
           </tr>
           <tr>
             <td>Subtotal</td>
-            <td>$ {quantity * price}</td>
+            <td>$ {amount * price}</td>
           </tr>
         </tbody>
       </table>
