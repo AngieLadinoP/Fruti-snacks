@@ -10,7 +10,10 @@ const CategoryCard = (props) => {
     >
       <Link to={`/productos/categoria/${id}`} className="category__link link">
         <div className="category__card">
-          <h3 className="category__title subtitle">{name}</h3>
+          <h3 className="category__title subtitle">
+            <span>Ver productos</span> <br />
+            {name}
+          </h3>
           <img rel="preload" src={img} alt={name} className="category__img" />
         </div>
       </Link>

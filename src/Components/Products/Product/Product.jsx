@@ -6,6 +6,7 @@ const Product = (props) => {
   return (
     <div className="product" style={{ backgroundColor: `${color}` }}>
       <Link to={`/productos/${id}`} className="product__link link">
+        <p className="product__more-info subtitle">Ver detalles</p>
         <img rel="preload" src={image} alt={name} className="product__img" />
         <h3 className="product__name subtitle">{name}</h3>
       </Link>

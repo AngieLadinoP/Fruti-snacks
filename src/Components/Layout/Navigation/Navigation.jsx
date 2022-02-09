@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <Link to="/" className="navigation__link navigation__link--home">
-        Home
+        Inicio
       </Link>
       <Link to="/productos" className="navigation__link navigation__link--home">
         Productos

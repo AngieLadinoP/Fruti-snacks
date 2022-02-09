@@ -1,13 +1,11 @@
 import React from "react";
-import CartProduct from "./CartProduct";
-import { CartState } from "../../Context/Context";
+import CartProduct from "./CartProduct/CartProduct";
+import { CartState } from "../../../Context/Context";
 const ShoppingCart = () => {
   const {
     state: { cart },
     dispatch,
   } = CartState();
-
-  console.log(cart);
 
   const addToCart = (id) => {
     dispatch({ type: "ADD_TO_CART", payload: id });
@@ -23,24 +21,21 @@ const ShoppingCart = () => {
   };
 
   return (
-    <div className="cart">
-      <h2 className="cart__title title">Carrito de compras</h2>
-      <button onClick={clearCart}>Limpiar el carrito</button>
-      {cart.map((item, index) => (
-        <CartProduct
-          key={index}
-          data={item}
-          removeFromProduct={removeFromProduct}
-          addToCart={addToCart}
-        />
-      ))}
-
-      <p>
-        Total
+    <div className="shopping-cart">
+      <h2 className="shopping-cart__title title">Productos en el carrito</h2>
+      <button onClick={clearCart} className="shopping-cart__clear-button">
+        Vaciar el carrito
+      </button>
+      <div className="shopping-cart__products">
         {cart.map((item, index) => (
-          <li key={index}>{item.price * item.amount}</li>
+          <CartProduct
+            key={index}
+            data={item}
+            removeFromProduct={removeFromProduct}
+            addToCart={addToCart}
+          />
         ))}
-      </p>
+      </div>
     </div>
   );
 };

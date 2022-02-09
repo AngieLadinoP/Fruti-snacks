@@ -77,7 +77,7 @@ const Products = () => {
   };
   return (
     <section className="Products">
-      <h2 className="products__title title">{info.title}</h2>
+      <h1 className="products__title title">{info.title}</h1>
       <div className="products__categories">
         {info.categoriesShown
           ? info.categoriesShown.map((category) => (
