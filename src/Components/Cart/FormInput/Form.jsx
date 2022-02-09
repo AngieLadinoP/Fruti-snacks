@@ -3,10 +3,7 @@ import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { CartState } from "../../../Context/Context";
 const Form = (props) => {
-  const {
-    state: { cart },
-    dispatch,
-  } = CartState();
+  const { dispatch } = CartState();
   const { cartInfo, totalPayment } = props;
   //CartInfo[name,price, quantity, subtotal]
   const [info, setInfo] = useState({
