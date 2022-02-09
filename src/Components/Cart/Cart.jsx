@@ -7,7 +7,6 @@ const Cart = () => {
   const {
     state: { cart },
   } = CartState();
-  console.log(cart);
 
   const cartInfo = cart.map((item) => [
     item.name,
@@ -15,20 +14,20 @@ const Cart = () => {
     item.amount,
     item.price * item.amount,
   ]);
-  console.log(cartInfo);
-  const reducer = (previousValue, currentValue) => previousValue + currentValue;
-  const totalQuantity = cartInfo.map((item) => item[2]).reduce(reducer);
-  const totalPayment = cartInfo.map((item) => item[3]).reduce(reducer);
 
-  console.log(totalQuantity);
-  console.log(totalPayment);
+  const reducer = (previousValue, currentValue) => previousValue + currentValue;
+  const totalQuantity =
+    cartInfo.length !== 0 ? cartInfo.map((item) => item[2]).reduce(reducer) : 0;
+  const totalPayment =
+    cartInfo.length !== 0 ? cartInfo.map((item) => item[3]).reduce(reducer) : 0;
+
   return (
     <>
       <section className="cart">
         <h1 className="cart__title title">Carrito de compras</h1>
         {cart.length !== 0 ? (
           <>
-            <p className="center">
+            <p className="cart__msg-disclaimer">
               El costo del despacho no está incluido en el precio
             </p>
             <p>
@@ -36,7 +35,7 @@ const Cart = () => {
               Whatsapp donde se determinará el método de pago y el costo del
               domicilio.
             </p>
-            <Form />
+            <Form cartInfo={cartInfo} totalPayment={totalPayment} />
             <table className="cart__table">
               <caption className="summary__title title">
                 Resumen de compra
@@ -70,7 +69,9 @@ const Cart = () => {
             <ShoppingCart />
           </>
         ) : (
-          "Tu carrito de compras está vacío"
+          <p className="cart__msg-empty subtitle">
+            No has agregado productos a tu carrito de compras
+          </p>
         )}
       </section>
     </>

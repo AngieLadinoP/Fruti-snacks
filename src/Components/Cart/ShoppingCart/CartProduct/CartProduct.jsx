@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaTrashAlt } from "react-icons/fa";
 const CartProduct = (props) => {
   const { data, removeFromProduct, addToCart } = props;
   const { id, name, price, amount, image } = data;
@@ -32,12 +32,13 @@ const CartProduct = (props) => {
       <p>
         Subtotal <span>$ {amount * price}</span>
       </p>
-      <button
+
+      <div
         onClick={() => removeFromProduct(id, true)}
         className="cart-product__button cart-product__button--remove-all"
       >
-        X
-      </button>
+        <FaTrashAlt />
+      </div>
     </div>
   );
 };

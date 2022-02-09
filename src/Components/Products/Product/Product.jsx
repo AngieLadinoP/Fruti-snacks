@@ -1,6 +1,7 @@
 import React from "react";
 import "./Product.css";
 import { Link } from "react-router-dom";
+import { BsCart4 } from "react-icons/bs";
 const Product = (props) => {
   const { id, image, name, price, color, addToCart } = props;
   return (
@@ -12,7 +13,7 @@ const Product = (props) => {
       </Link>
       <p className="product__price">{`$ ${price} UND`}</p>
       <div className="product__cart-icon" onClick={() => addToCart(id)}>
-        <i className="fas fa-cart-plus"></i>
+        <BsCart4 />
       </div>
     </div>
   );

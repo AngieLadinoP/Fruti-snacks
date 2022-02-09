@@ -1,14 +1,35 @@
 import React from "react";
 import { useState } from "react";
+import { BsWhatsapp } from "react-icons/bs";
+import { CartState } from "../../../Context/Context";
+const Form = (props) => {
+  const {
+    state: { cart },
+    dispatch,
+  } = CartState();
+  const { cartInfo, totalPayment } = props;
+  //CartInfo[name,price, quantity, subtotal]
+  const [info, setInfo] = useState({
+    name: "",
+    address: "",
+    message: "",
+  });
+  const { name, address, message } = info;
+  const summary = cartInfo.map(
+    (item) => `%0A%0A${item[0]}%0ACantidad: ${item[2]}%0ASubtotal: ${item[3]}`
+  );
 
-const Form = () => {
-  const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
+  const phoneNumber = 1111111111;
+  let whatsappMessage = `Pedido a nombre de *${name}*%0A*Dirección:* ${address}%0A%0A*Resumen de la compra*${summary}%0A%0A*Total a pagar: ${totalPayment}*%0A%0A*Información adicional*%0A${
+    message ? message : "Sin comentarios adicionales"
+  }`;
 
+  const urlWhatsapp = `https://api.whatsapp.com/send?phone=57${phoneNumber}&text=${whatsappMessage}`;
   const handleSubmit = (e) => {
     e.preventDefault();
-    setName("");
-    setAddress("");
+    window.open(urlWhatsapp, "_blank");
+    setInfo({ name: "", address: "", message: "" });
+    dispatch({ type: "CLEAR_CART" });
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -18,8 +39,9 @@ const Form = () => {
           className="form__input"
           type="text"
           value={name}
+          placeholder="Nombre...."
           required
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => setInfo({ ...info, name: e.target.value })}
         />
       </label>
       <label htmlFor="Address" className="form__label">
@@ -28,8 +50,21 @@ const Form = () => {
           className="form__input"
           type="text"
           value={address}
+          placeholder="Dirección..."
           required
-          onChange={(e) => setAddress(e.target.value)}
+          onChange={(e) => setInfo({ ...info, address: e.target.value })}
+        />
+      </label>
+      <label htmlFor="Message" className="form__label">
+        Información adicional
+        <textarea
+          className="form__text-area"
+          name={message}
+          maxLength="250"
+          rows="4"
+          cols="50"
+          placeholder="Información adicional o comentarios sobre tu pedido..."
+          onChange={(e) => setInfo({ ...info, message: e.target.value })}
         />
       </label>
       <button
@@ -37,7 +72,7 @@ const Form = () => {
         disabled={name && address ? "" : "disabled"}
       >
         <span>
-          <i className="fab fa-whatsapp form__icon"></i>
+          <BsWhatsapp />
         </span>
         Llévame a Whatsapp
       </button>
