@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# Fruti Snacks
+
+## Website to request home delivery of the company **FRUTI SNACKS**.
+
+View product catalog, filter by categories or visualize the information of each product.
+It has a cart that shows the summary of the purchase and allows you to edit the products added.
+Receive order information on whatsapp
+Application developed with React and styles with pure css.
+
+See how it works in the [Fruti Snacks demo](https://fruti-snacks.netlify.app/).
+
+---
+
+---
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
