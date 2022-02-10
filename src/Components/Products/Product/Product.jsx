@@ -1,7 +1,8 @@
 import React from "react";
-import "./Product.css";
 import { Link } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
+import "./Product.css";
+
 const Product = (props) => {
   const { id, image, name, price, color, addToCart } = props;
   return (
@@ -18,5 +19,4 @@ const Product = (props) => {
     </div>
   );
 };
-
 export default Product;

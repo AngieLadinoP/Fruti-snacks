@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Category.css";
+
 const CategoryCard = (props) => {
   const { id, name, img, color } = props;
-
   return (
     <div
       className="category"

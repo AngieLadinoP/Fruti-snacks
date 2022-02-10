@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
+import "./CartProduct.css";
 const CartProduct = (props) => {
   const { data, removeFromProduct, addToCart } = props;
   const { id, name, price, amount, image } = data;
@@ -9,7 +10,9 @@ const CartProduct = (props) => {
       <img src={image} alt={name} className="cart-product__image" />
       <p className="cart-product__price">
         Precio
-        <span className="cart-product__price--value">$ {price}</span>
+        <span className="cart-product__price--value">
+          $ {new Intl.NumberFormat("de-DE").format(price)}
+        </span>
       </p>
       <p className="cart-product__quantity">
         Cantidad
@@ -29,8 +32,12 @@ const CartProduct = (props) => {
           </button>
         </span>
       </p>
-      <p>
-        Subtotal <span>$ {amount * price}</span>
+      <p className="cart-product__subtotal">
+        Subtotal
+        <span className="cart-product__subtotal--value">
+          {" "}
+          $ {new Intl.NumberFormat("de-DE").format(amount * price)}
+        </span>
       </p>
 
       <div

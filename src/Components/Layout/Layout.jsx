@@ -1,8 +1,8 @@
 import React from "react";
-import "./Layout.css";
 import { Outlet } from "react-router-dom";
 import Logo from "./Logo.png";
 import Navigation from "./Navigation/Navigation.jsx";
+import "./Layout.css";
 
 const Layout = () => {
   return (

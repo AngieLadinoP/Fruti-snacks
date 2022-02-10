@@ -1,7 +1,6 @@
 import React from "react";
+import { galery } from "../../data.js";
 import ExpandingCards from "./ExpandingCards/ExpandingCards";
-import {galery} from "../../data.js";
-
 import "./Home.css";
 const Home = () => {
   return (

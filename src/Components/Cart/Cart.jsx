@@ -1,8 +1,8 @@
 import React from "react";
-import "./Cart.css";
+import { CartState } from "./../../Context/Context";
 import Form from "./FormInput/Form";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
-import { CartState } from "./../../Context/Context";
+import "./Cart.css";
 const Cart = () => {
   const {
     state: { cart },
@@ -30,12 +30,9 @@ const Cart = () => {
             <p className="cart__msg-disclaimer">
               El costo del despacho no está incluido en el precio
             </p>
-            <p>
-              Completa tu información y da click al botón para ser redirigido a
-              Whatsapp donde se determinará el método de pago y el costo del
-              domicilio.
-            </p>
-            <Form cartInfo={cartInfo} totalPayment={totalPayment} />
+            <section className="cart__shopping-cart">
+              <ShoppingCart />
+            </section>
             <table className="cart__table">
               <caption className="summary__title title">
                 Resumen de compra
@@ -49,24 +46,35 @@ const Cart = () => {
                 </tr>
               </thead>
               <tbody>
-                {cartInfo.map((item, index) => (
-                  <tr key={index}>
-                    <td>{item[0]}</td>
-                    <td>{item[1]}</td>
-                    <td>{item[2]}</td>
-                    <td>$ {item[3]}</td>
-                  </tr>
-                ))}
+                {cartInfo.map((item, index) =>
+                  item[3] !== 0 ? (
+                    <tr key={index}>
+                      <td>{item[0]}</td>
+                      <td>${new Intl.NumberFormat("de-DE").format(item[1])}</td>
+                      <td>{item[2]}</td>
+                      <td>${new Intl.NumberFormat("de-DE").format(item[3])}</td>
+                    </tr>
+                  ) : null
+                )}
               </tbody>
               <tfoot>
                 <tr>
                   <td colSpan="2">Total</td>
                   <td>{totalQuantity}</td>
-                  <td>$ {totalPayment}</td>
+                  <td>
+                    $ {new Intl.NumberFormat("de-DE").format(totalPayment)}
+                  </td>
                 </tr>
               </tfoot>
             </table>
-            <ShoppingCart />
+            <section className="cart__form">
+              <p className="cart__text">
+                Completa tu información y da click al botón para ser redirigido
+                a Whatsapp donde se determinará el método de pago y el costo del
+                domicilio.
+              </p>
+              <Form cartInfo={cartInfo} totalPayment={totalPayment} />
+            </section>
           </>
         ) : (
           <p className="cart__msg-empty subtitle">

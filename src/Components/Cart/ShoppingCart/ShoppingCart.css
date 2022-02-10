@@ -1,0 +1,32 @@
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.shopping-cart__clear-button {
+    padding: 10px 15px;
+    width: auto;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #F92410;
+    color: white;
+    border: none;
+}
+
+.shopping-cart__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.shopping-cart__products p {
+    font-size: smaller;
+}

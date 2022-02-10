@@ -1,7 +1,7 @@
-import React from "react";
-import { useState } from "react";
-import { BsWhatsapp } from "react-icons/bs";
+import React, { useState } from "react";
 import { CartState } from "../../../Context/Context";
+import { BsWhatsapp } from "react-icons/bs";
+import "./Form.css";
 const Form = (props) => {
   const { dispatch } = CartState();
   const { cartInfo, totalPayment } = props;
@@ -16,7 +16,7 @@ const Form = (props) => {
     (item) => `%0A%0A${item[0]}%0ACantidad: ${item[2]}%0ASubtotal: ${item[3]}`
   );
 
-  const phoneNumber = 1111111111;
+  const phoneNumber = 3144889969;
   let whatsappMessage = `Pedido a nombre de *${name}*%0A*Dirección:* ${address}%0A%0A*Resumen de la compra*${summary}%0A%0A*Total a pagar: ${totalPayment}*%0A%0A*Información adicional*%0A${
     message ? message : "Sin comentarios adicionales"
   }`;
@@ -58,8 +58,8 @@ const Form = (props) => {
           className="form__text-area"
           name={message}
           maxLength="250"
-          rows="4"
-          cols="50"
+          cols="20"
+          rows="5"
           placeholder="Información adicional o comentarios sobre tu pedido..."
           onChange={(e) => setInfo({ ...info, message: e.target.value })}
         />

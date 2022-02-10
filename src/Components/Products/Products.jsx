@@ -1,12 +1,11 @@
-import React from "react";
-import "./Products.css";
-import CategoryCard from "./Category/CategoryCard/CategoryCard.jsx";
-import Product from "./Product/Product.jsx";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { categories, subcategory1, subcategory2 } from "../../data.js";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { CartState } from "../../Context/Context.js";
-//import Modal from "../Modal/Modal";
+import Product from "./Product/Product.jsx";
+import Button from "../Button/Button";
+import CategoryCard from "./Category/Category.jsx";
+import "./Products.css";
 //import SelectOptionSort from "./SelectOptionSort";
 const Products = () => {
   const { id } = useParams();
@@ -75,9 +74,18 @@ const Products = () => {
   const addToCart = (id) => {
     dispatch({ type: "ADD_TO_CART", payload: id });
   };
+  let navigate = useNavigate();
+
   return (
     <section className="Products">
       <h1 className="products__title title">{info.title}</h1>
+      {id !== undefined ? (
+        <Button
+          name="Regresar"
+          styleButton="white-button"
+          onClick={() => navigate(-1)}
+        />
+      ) : null}
       <div className="products__categories">
         {info.categoriesShown
           ? info.categoriesShown.map((category) => (
@@ -92,19 +100,19 @@ const Products = () => {
           : null}
       </div>
       {/*   <SelectOptionSort /> */}
-      <div className="products__list">
+      <article className="products__list">
         {info.productsShown.map((product) => (
           <Product
             key={product.id}
             name={product.name}
             image={product.image}
             color={product.color}
-            price={product.price}
+            price={new Intl.NumberFormat("de-DE").format(product.price)}
             id={product.id}
             addToCart={addToCart}
           />
         ))}
-      </div>
+      </article>
     </section>
   );
 };

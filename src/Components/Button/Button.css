@@ -1,0 +1,38 @@
+/* ----Button----- */
+
+.black-button {
+    background-color: #000;
+    color: #00A3E8;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+    width: 250px;
+}
+
+.white-button {
+    font-weight: bold;
+    font-family: 'Poor Story', cursive;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 20px;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    margin: 5px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import CartProduct from "./CartProduct/CartProduct";
 import { CartState } from "../../../Context/Context";
+import CartProduct from "./CartProduct/CartProduct";
+import "./ShoppingCart.css";
 const ShoppingCart = () => {
   const {
     state: { cart },
