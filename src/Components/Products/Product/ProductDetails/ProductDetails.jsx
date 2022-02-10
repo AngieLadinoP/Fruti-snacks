@@ -1,14 +1,12 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { products } from "../../../../data.js";
 import { CartState } from "../../../../Context/Context.js";
 import CardDetails from "./CardDetails/CardDetails";
 import Button from "../../../Button/Button.jsx";
+import { getProductDetails } from "../../filters.js";
 
 const ProductDetails = () => {
   const { id } = useParams();
-  const getProductDetails = (id) =>
-    products.filter((product) => product.id === id);
   const details = getProductDetails(parseInt(id));
   const { dispatch } = CartState();
   const addToCart = (id) => {

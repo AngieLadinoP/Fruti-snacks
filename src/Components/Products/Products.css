@@ -1,3 +1,7 @@
+.products {
+    display: flex;
+}
+
 .products__categories {
     display: flex;
 }
@@ -8,4 +12,17 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+.products__sort {
+    background-color: black;
+    padding: 5px;
+    width: auto;
+    margin: 10px;
+    float: right;
+    color: #00a3e8;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
 }

@@ -1,5 +1,10 @@
-import { products } from "./data";
+import { products } from "../../data.js";
 
+export const filterByCategory = (value) =>
+  products.filter((product) => product.category === value);
+
+export const filterBySubcategory = (value) =>
+  products.filter((product) => product.subcategory === value);
 /* Filter by type */
 export const filterByType = (value) =>
   products.filter((product) => product.type === value);
@@ -28,12 +33,14 @@ export const filterBySize = (value) =>
 
 /* Sort by price 
 lowest to highest-> value="low" or highest to lowest -> value="high"  */
-export const sortbyPrice = (order) =>
-  products.sort((a, b) =>
-    order === "low" ? a.price - b.price : b.price - a.price
+export const sortbyPrice = (listproducts, order) =>
+  listproducts.sort((a, b) =>
+    order === "low"
+      ? a.price - b.price
+      : order === "high"
+      ? b.price - a.price
+      : a.id - b.id
   );
 
-
-
-  
-export const getProductDetails = (id) => products.filter((product) => product.id === id);
+export const getProductDetails = (id) =>
+  products.filter((product) => product.id === id);

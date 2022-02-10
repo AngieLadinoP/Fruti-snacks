@@ -5,8 +5,12 @@ import { CartState } from "../../Context/Context.js";
 import Product from "./Product/Product.jsx";
 import Button from "../Button/Button";
 import CategoryCard from "./Category/Category.jsx";
+import {
+  filterByCategory,
+  filterBySubcategory,
+  sortbyPrice,
+} from "./filters.js";
 import "./Products.css";
-//import SelectOptionSort from "./SelectOptionSort";
 const Products = () => {
   const { id } = useParams();
   const {
@@ -19,12 +23,6 @@ const Products = () => {
     categoriesShown: categories,
     productsShown: products,
   });
-
-  const filterByCategory = (value) =>
-    products.filter((product) => product.category === value);
-
-  const filterBySubcategory = (value) =>
-    products.filter((product) => product.subcategory === value);
 
   useEffect(() => {
     if (id === "c1") {
@@ -71,10 +69,17 @@ const Products = () => {
       });
     } // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
+
   const addToCart = (id) => {
     dispatch({ type: "ADD_TO_CART", payload: id });
   };
   let navigate = useNavigate();
+
+  const handleChange = (sortSelected) => {
+    let productsSorted = sortbyPrice(info.productsShown, sortSelected);
+    setInfo({ ...info, productsShown: productsSorted });
+    console.log(sortSelected);
+  };
 
   return (
     <section className="Products">
@@ -99,7 +104,16 @@ const Products = () => {
             ))
           : null}
       </div>
-      {/*   <SelectOptionSort /> */}
+
+      <select
+        className="products__sort"
+        name="sort"
+        onChange={(e) => handleChange(e.target.value)}
+      >
+        <option value="initial">---Ordenar por precio---</option>
+        <option value="low">Menor a mayor</option>
+        <option value="high">Mayor a Menor</option>
+      </select>
       <article className="products__list">
         {info.productsShown.map((product) => (
           <Product

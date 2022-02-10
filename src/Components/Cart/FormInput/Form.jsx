@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { CartState } from "../../../Context/Context";
 import { BsWhatsapp } from "react-icons/bs";
 import "./Form.css";
 const Form = (props) => {
-  const { dispatch } = CartState();
   const { cartInfo, totalPayment } = props;
   //CartInfo[name,price, quantity, subtotal]
-  const [info, setInfo] = useState({
-    name: "",
-    address: "",
-    message: "",
-  });
-  const { name, address, message } = info;
+
+  const { dispatch } = CartState();
+
+  const {
+    userState: { name, address, message },
+    userDispatch,
+  } = CartState();
+
+  const updateName = (name) => {
+    userDispatch({ type: "UPDATE_NAME", payload: name });
+  };
+  const updateAddress = (address) => {
+    userDispatch({ type: "UPDATE_ADDRESS", payload: address });
+  };
+  const updateMessage = (message) => {
+    userDispatch({ type: "UPDATE_MESSAGE", payload: message });
+  };
+
   const summary = cartInfo.map(
     (item) => `%0A%0A${item[0]}%0ACantidad: ${item[2]}%0ASubtotal: ${item[3]}`
   );
@@ -25,9 +36,11 @@ const Form = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     window.open(urlWhatsapp, "_blank");
-    setInfo({ name: "", address: "", message: "" });
+    userDispatch({ type: "CLEAR_FORM" });
     dispatch({ type: "CLEAR_CART" });
   };
+
+  console.log(name, address, message);
   return (
     <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="Name" className="form__label">
@@ -38,7 +51,7 @@ const Form = (props) => {
           value={name}
           placeholder="Nombre...."
           required
-          onChange={(e) => setInfo({ ...info, name: e.target.value })}
+          onChange={(e) => updateName(e.target.value)}
         />
       </label>
       <label htmlFor="Address" className="form__label">
@@ -49,7 +62,7 @@ const Form = (props) => {
           value={address}
           placeholder="Dirección..."
           required
-          onChange={(e) => setInfo({ ...info, address: e.target.value })}
+          onChange={(e) => updateAddress(e.target.value)}
         />
       </label>
       <label htmlFor="Message" className="form__label">
@@ -61,7 +74,7 @@ const Form = (props) => {
           cols="20"
           rows="5"
           placeholder="Información adicional o comentarios sobre tu pedido..."
-          onChange={(e) => setInfo({ ...info, message: e.target.value })}
+          onChange={(e) => updateMessage(e.target.value)}
         />
       </label>
       <button

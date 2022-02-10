@@ -1,4 +1,6 @@
 import { products } from "../data.js";
+
+/* -----------------------Cart Reducer---------------------------- */
 //Define initial state: products= list of products and cart = empty array
 export const shoppingInitialState = { products: products, cart: [] };
 
@@ -55,6 +57,24 @@ export const shoppingReducer = (state, action) => {
     case "CLEAR_CART":
       // To clear cart,return initial state where cart was empty
       return shoppingInitialState;
+    default:
+      return state;
+  }
+};
+
+/* -----------------------User Information Reducer---------------------------- */
+export const userInitialState = { name: "", address: "", message: "" };
+
+export const userReducer = (state, action) => {
+  switch (action.type) {
+    case "UPDATE_NAME":
+      return { ...state, name: action.payload };
+    case "UPDATE_ADDRESS":
+      return { ...state, address: action.payload };
+    case "UPDATE_MESSAGE":
+      return { ...state, message: action.payload };
+    case "CLEAR_FORM":
+      return userInitialState;
     default:
       return state;
   }
