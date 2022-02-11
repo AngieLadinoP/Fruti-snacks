@@ -5,9 +5,11 @@ import { CartState } from "../../Context/Context.js";
 import Product from "./Product/Product.jsx";
 import Button from "../Button/Button";
 import CategoryCard from "./Category/Category.jsx";
+import Filters from "./Filters/Filters.jsx";
 import {
   filterByCategory,
   filterBySubcategory,
+  filter,
   sortbyPrice,
 } from "./filters.js";
 import "./Products.css";
@@ -81,52 +83,72 @@ const Products = () => {
       productsShown: sortbyPrice(info.productsShown, sortSelected),
     });
   };
-  return (
-    <section className="Products">
-      <h1 className="products__title title">{info.title}</h1>
-      {id !== undefined ? (
-        <Button
-          name="Regresar"
-          styleButton="white-button"
-          onClick={() => navigate(-1)}
-        />
-      ) : null}
-      <div className="products__categories">
-        {info.categoriesShown
-          ? info.categoriesShown.map((category) => (
-              <CategoryCard
-                id={category.id}
-                key={category.id}
-                name={category.name}
-                img={category.url}
-                color={category.color}
-              />
-            ))
-          : null}
-      </div>
 
-      <select
-        className="products__sort"
-        name="sort"
-        onChange={(e) => sortPrice(e.target.value)}
-      >
-        <option value="initial">---Ordenar por precio---</option>
-        <option value="low">Menor a mayor</option>
-        <option value="high">Mayor a Menor</option>
-      </select>
-      <article className="products__list">
-        {info.productsShown.map((product) => (
-          <Product
-            key={product.id}
-            name={product.name}
-            image={product.image}
-            color={product.color}
-            price={new Intl.NumberFormat("de-DE").format(product.price)}
-            id={product.id}
-            addToCart={addToCart}
+  const clearFilter = () => {
+    setInfo({
+      ...info,
+      productsShown: products,
+    });
+  };
+  const filterProducts = (value) => {
+    console.log(value);
+    setInfo({ ...info, productsShown: filter(products, value) });
+  };
+  return (
+    <section className="products">
+      <h1 className="products__title title">{info.title}</h1>
+      <div className="products__catalogue">
+        {id !== undefined ? (
+          <Button
+            name="Regresar"
+            styleButton="white-button"
+            onClick={() => navigate(-1)}
           />
-        ))}
-      </article>
+        ) : null}
+        <div className="products__categories">
+          {info.categoriesShown
+            ? info.categoriesShown.map((category) => (
+                <CategoryCard
+                  id={category.id}
+                  key={category.id}
+                  name={category.name}
+                  img={category.url}
+                  color={category.color}
+                />
+              ))
+            : null}
+        </div>
+        <select
+          className="products__sort"
+          name="sort"
+          onChange={(e) => sortPrice(e.target.value)}
+        >
+          <option value="initial">---Ordenar por precio---</option>
+          <option value="low">Menor a mayor</option>
+          <option value="high">Mayor a Menor</option>
+        </select>
+        <article className="products__list">
+          {info.productsShown.map((product) => (
+            <Product
+              key={product.id}
+              name={product.name}
+              image={product.image}
+              color={product.color}
+              price={new Intl.NumberFormat("de-DE").format(product.price)}
+              id={product.id}
+              addToCart={addToCart}
+            />
+          ))}
+        </article>
+      </div>
+      <div className="products__filters">
+        {id === undefined ? (
+          <Filters
+            filter={(e) => filterProducts(e.target.value)}
+            clearFilter={clearFilter}
+          />
+        ) : null}
+      </div>
     </section>
   );
 };

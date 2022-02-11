@@ -42,5 +42,30 @@ export const sortbyPrice = (products, order) =>
       : a.id - b.id
   );
 
+export const filter = (products, value) => {
+  if (
+    value === "Redonda" ||
+    value === "Corazón" ||
+    value === "Molde" ||
+    value === "Rectangular"
+  ) {
+    return products.filter((product) => product.shape === value);
+  } else if (
+    value === "Mora" ||
+    value === "Durazno" ||
+    value === "Banano" ||
+    value === "Nuez"
+  ) {
+    return products.filter(
+      (product) => product.flavor === value || product.flavor[1] === value
+    );
+  } else if (value === "Individual" || value === "Paquete") {
+    return products.filter((product) => product.quantity === value);
+  } else {
+    return products;
+  }
+};
+
+console.log(filter(products, "Nuez"));
 export const getProductDetails = (id) =>
   products.filter((product) => product.id === id);
