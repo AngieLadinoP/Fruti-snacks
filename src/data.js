@@ -14,7 +14,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas con mermelada",
-    price: 100455,
+    price: 2000,
     shape: "Redonda",
     flavor: "Durazno",
     servings: 1,
@@ -35,7 +35,7 @@ export const products = [
       "Durazno",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1h6gSdd2ZjOWjiqnPZJHhRXF06FfZdr_H",
+      "https://drive.google.com/uc?export=view&id=1FfBf7S80n8a-XiLs4aojCNSKdtIpzZBn",
     color: colorProd2,
   },
   {
@@ -44,7 +44,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas con mermelada",
-    price: 8900,
+    price: 2000,
     shape: "Corazón",
     flavor: "Durazno",
     servings: 1,
@@ -65,7 +65,7 @@ export const products = [
       "Durazno",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1-h2Z4r9LfW428gMx_vcHxzAAn3BUoh7B",
+      "https://drive.google.com/uc?export=view&id=1T055RythP5MrhV_bBmXs1V6Hw7pO7ElO",
     color: colorProd2,
   },
   {
@@ -74,7 +74,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas con mermelada",
-    price: 1200,
+    price: 2000,
     shape: "Corazón",
     flavor: "Mora",
     servings: 1,
@@ -95,7 +95,7 @@ export const products = [
       "Mora",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1ITc0rDt3af6-RcyHXjHe5w5SmhXRx9lv",
+      "https://drive.google.com/uc?export=view&id=1pugSXgzR9jUH6fMNrv3sNyTueAXD8o3n",
     color: colorProd2,
   },
   {
@@ -104,7 +104,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas tradicionales",
-    price: 50,
+    price: 1500,
     shape: "Corazón",
     flavor: "Natural",
     servings: 1,
@@ -123,7 +123,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1vWQ2jYcHI3Ys9nBkn8X0ahnofg3x_riT",
+      "https://drive.google.com/uc?export=view&id=1ACUwfca_V276qWZRwUqLkYuyAzg__Yjx",
     color: colorProd1,
   },
   {
@@ -132,7 +132,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas tradicionales",
-    price: 630,
+    price: 1500,
     shape: "Redonda",
     flavor: "Natural",
     servings: 1,
@@ -151,7 +151,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=14zjLuW7QhN5XdiLgOBNO6L___CDMfJfM",
+      "https://drive.google.com/uc?export=view&id=1IfRbVP0FJNnIXXJtm0Yc2uev-N04Str_",
     color: colorProd1,
   },
   {
@@ -160,7 +160,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas con mermelada",
-    price: 520,
+    price: 2000,
     shape: "Redonda",
     flavor: "Mora",
     servings: 1,
@@ -181,7 +181,7 @@ export const products = [
       "Mora",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1uE4kHbiWsUnYbu9pbzzXWQLY0Z71_PAN",
+      "https://drive.google.com/uc?export=view&id=1crE833FWcqEW7dwcj7fCzg0JLAZ0tYJo",
     color: colorProd2,
   },
   {
@@ -190,7 +190,7 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Muffin",
     subcategory: "Muffins de banano",
-    price: 1000,
+    price: 4000,
     shape: "Tradicional",
     flavor: "Banano",
     servings: 1,
@@ -214,7 +214,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1M5XLyFQvB_Mc8Geda9brZzI5GdNpDXex",
+      "https://drive.google.com/uc?export=view&id=1fBU_ukGbIN3oPnpykb_SEkl2m2B1Mcb-",
     color: colorProd3,
   },
   {
@@ -223,7 +223,7 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Muffin",
     subcategory: "Muffins de banano",
-    price: 1500,
+    price: 2000,
     shape: "Tradicional",
     flavor: "Banano",
     servings: 1,
@@ -247,7 +247,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1D4JgsYlP3apYStIcKkOe9yx6ATVcFG5k",
+      "https://drive.google.com/uc?export=view&id=1lgc2HfoFxcp8-MQzGd-n8p08UAI-nSUk",
     color: colorProd3,
   },
   {
@@ -256,7 +256,7 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Muffin",
     subcategory: "Muffins de banano",
-    price: 10900,
+    price: 2500,
     shape: "Tradicional",
     flavor: ["Banano", "Nuez"],
     servings: 1,
@@ -281,7 +281,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1WAr_vVG84Svp5f9NwURyZxhGAcVlj2wc",
+      "https://drive.google.com/uc?export=view&id=1-Gocn-zJeIIyrd34Z2pxy9eOWYIvr2I7",
     color: colorProd3,
   },
   {
@@ -290,7 +290,7 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Muffin",
     subcategory: "Muffins de banano",
-    price: 10,
+    price: 4500,
     shape: "Tradicional",
     flavor: ["Banano", "Nuez"],
     servings: 1,
@@ -315,7 +315,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1Xn1r5WD00Tq55PbwaPAyF2krF24jKcH4",
+      "https://drive.google.com/uc?export=view&id=1EuSlEdna9KOxwh8HcVgPaBhjLgk2F899",
     color: colorProd3,
   },
   {
@@ -324,10 +324,10 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Pan",
     subcategory: "Panes de banano",
-    price: 1560,
+    price: 20000,
     shape: "Rectangular",
     flavor: ["Banano", "Nuez"],
-    servings: 10,
+    servings: 15,
     measurements: {
       length: 30,
       width: 20,
@@ -349,7 +349,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1lsTFMClRqlJcs0pvwHlb8V8RpTGxk8gT",
+      "https://drive.google.com/uc?export=view&id=1cEGtYjeLJHjVzaOkmjn4cK40vg6w3D5w",
     color: colorProd4,
   },
   {
@@ -358,10 +358,10 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Pan",
     subcategory: "Panes de banano",
-    price: 5730,
+    price: 20000,
     shape: "Molde",
     flavor: ["Banano", "Nuez"],
-    servings: 10,
+    servings: 15,
     measurements: {
       length: 25,
       width: 11,
@@ -383,7 +383,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1EYregztGNQ3itvmDNPkeWAlqTT0gJI-1",
+      "https://drive.google.com/uc?export=view&id=1s4yBLjHc9QveR3wlij28rKSl_JWKv5Cw",
     color: colorProd4,
   },
   {
@@ -392,7 +392,7 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Pan",
     subcategory: "Panes de banano",
-    price: 1540,
+    price: 18000,
     shape: "Rectangular",
     flavor: "Banano",
     servings: 10,
@@ -416,7 +416,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1FEy-oPYS-utfej2AJSw2amYBqOt85KnO",
+      "https://drive.google.com/uc?export=view&id=1a6Djg8P0Y24FN-eH0PcahgMi-OKtjFgy",
     color: colorProd4,
   },
   {
@@ -425,7 +425,7 @@ export const products = [
     category: "Muffins y panes de banano",
     type: "Pan",
     subcategory: "Panes de banano",
-    price: 16000,
+    price: 18000,
     shape: "Molde",
     flavor: "Banano",
     servings: 10,
@@ -449,7 +449,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=19POJQXU4RbXGtCQj1cMGPsC6jD0RTmXz",
+      "https://drive.google.com/uc?export=view&id=1wtSyM_moxPy1auwgnBWRSV2IYWMZAcyk",
     color: colorProd4,
   },
   {
@@ -458,7 +458,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas tradicionales",
-    price: 1850,
+    price: 3500,
     shape: "Redonda",
     flavor: "Natural",
     servings: 10,
@@ -477,7 +477,7 @@ export const products = [
       "Extracto de vainilla",
     ],
     image:
-      "https://drive.google.com/uc?export=view&id=1A7ml7kRcJz0g0Doc7oraEKcztyOSc7M4",
+      "https://drive.google.com/uc?export=view&id=1ynukIwnKPA7c1qGsNB2JoCMAaGtEBvO-",
     color: colorProd1,
   },
   {
@@ -486,7 +486,7 @@ export const products = [
     category: "Galletas de mantequilla",
     type: "Galleta",
     subcategory: "Galletas tradicionales",
-    price: 12545,
+    price: 3500,
     shape: "Corazón",
     flavor: "Natural",
     servings: 10,
@@ -499,7 +499,7 @@ export const products = [
     quantity: "Paquete",
     ingredients: ["Harina", "Azúcar"],
     image:
-      "https://drive.google.com/uc?export=view&id=19iDH7vUxKdpRX2apO3IHP7thxp5mhElE",
+      "https://drive.google.com/uc?export=view&id=1LGDu3GyzMA8Fo_Vuqi4TrDePytJyKh_V",
     color: colorProd1,
   },
 ];
@@ -508,13 +508,13 @@ export const categories = [
   {
     id: "c1",
     name: "Galletas de mantequilla",
-    url: "https://drive.google.com/uc?export=view&id=1mvyqP6mZMlU9yq16wuLKjid0PK7bjPg8",
+    url: "https://drive.google.com/uc?export=view&id=1NoZ7idFQgKOxGm-EB2U-2aT9CKBUtNqX",
     color: colorCat1,
   },
   {
     id: "c2",
     name: "Muffins y panes de banano",
-    url: "https://drive.google.com/uc?export=view&id=1nZbwJonf-S21mIlwJtL5W6Ha5T8mFd8Q",
+    url: "https://drive.google.com/uc?export=view&id=1vnSW6OS35GhHTKoktHgGT7DBcOLzJzXD",
     color: colorCat2,
   },
 ];
@@ -523,13 +523,13 @@ export const subcategory1 = [
   {
     id: "c11",
     name: "Galletas tradicionales",
-    url: "https://drive.google.com/uc?export=view&id=1uv06aoe3TB-e1bX9zy3VGPFS1wpQKh-N",
+    url: "https://drive.google.com/uc?export=view&id=1Iqs_aPf5lj7dAAurj0pOJIrzeASplSOs",
     color: colorProd1,
   },
   {
     id: "c12",
     name: "Galletas con mermelada",
-    url: "https://drive.google.com/uc?export=view&id=1DpZPOLnkr4_Q09CxCqWjcfYTaKhhBwH4",
+    url: "https://drive.google.com/uc?export=view&id=1y4QQbg4VIM0bk-LFT2XQdKCmciGSDaxR",
     color: colorProd2,
   },
 ];
@@ -538,13 +538,13 @@ export const subcategory2 = [
   {
     id: "c21",
     name: "Muffins de banano",
-    url: "https://drive.google.com/uc?export=view&id=1l7FoTLpmVwPGYGkBnpOKm1miQ0_NzhU2",
+    url: "https://drive.google.com/uc?export=view&id=1p063eUDt-xHjBCjeHpLy5SyXkImtqUym",
     color: colorProd3,
   },
   {
     id: "c22",
     name: "Panes de banano",
-    url: "https://drive.google.com/uc?export=view&id=1B4K4IL7SN_WaX38qH7GAbcY4RS0JILAN",
+    url: "https://drive.google.com/uc?export=view&id=11KQtMhSDDcVUXVTORwwgmDtd1vW8v85G",
     color: colorProd4,
   },
 ];
@@ -553,26 +553,26 @@ export const galery = [
   {
     id: 1,
     title: "Nuestros productos",
-    url: "https://drive.google.com/uc?export=view&id=1RYG9fNYeik3bhRSgA429X8h8Hfp7AIfS",
+    url: "https://drive.google.com/uc?export=view&id=1pbYqL6UccOEpnTfWy15roWt9CPkMj7ky",
     active: true,
   },
   {
     id: 2,
     title: "Galletas tradicionales redondas",
-    url: "https://drive.google.com/uc?export=view&id=1P3_rGf9F2nQZZXgpK40S5poTCZMRFeL9",
+    url: "https://drive.google.com/uc?export=view&id=1Gdf1iIIoMuStnM3I9FIxYR8nWGBVhuMH",
     active: false,
   },
   {
     id: 3,
     title: "Galletas y muffins",
-    url: "https://drive.google.com/uc?export=view&id=1hYKvEjcoapy1i3A3M76KKoisEmA60h-3",
+    url: "https://drive.google.com/uc?export=view&id=1nsg3nISbmmUWG6TQBZt5z_zdOVDm5wHw",
     active: false,
   },
 
   {
     id: 4,
     title: "Galletas tradicionales corazón",
-    url: "https://drive.google.com/uc?export=view&id=1rF64SCqjArODYjwVqtuk4whfLnr0axxl",
+    url: "https://drive.google.com/uc?export=view&id=17bZuZHal3PIG4V4XEkUsbv4ekaNJ5eHv",
     active: false,
   },
 ];

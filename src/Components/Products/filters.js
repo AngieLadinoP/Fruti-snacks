@@ -6,35 +6,35 @@ export const filterByCategory = (value) =>
 export const filterBySubcategory = (value) =>
   products.filter((product) => product.subcategory === value);
 /* Filter by type */
-export const filterByType = (value) =>
+export const filterByType = (products, value) =>
   products.filter((product) => product.type === value);
 
 /* Filter by Shape */
-export const filterByShape = (value) =>
+export const filterByShape = (products, value) =>
   products.filter((product) => product.shape === value);
 
 /* Filter by Flavor */
-export const filterByFlavor = (value) =>
+export const filterByFlavor = (products, value) =>
   products.filter(
     (product) => product.flavor === value || product.flavor[1] === value
   );
 
 /* Filter by Quantity */
-export const filterByQuantity = (value) =>
+export const filterByQuantity = (products, value) =>
   products.filter(
     (product) => product.flavor === value || product.quantity === value
   );
 
 /* Filter by Size */
-export const filterBySize = (value) =>
+export const filterBySize = (products, value) =>
   products.filter(
     (product) => product.flavor === value || product.size === value
   );
 
 /* Sort by price 
 lowest to highest-> value="low" or highest to lowest -> value="high"  */
-export const sortbyPrice = (listproducts, order) =>
-  listproducts.sort((a, b) =>
+export const sortbyPrice = (products, order) =>
+  products.sort((a, b) =>
     order === "low"
       ? a.price - b.price
       : order === "high"

@@ -27,7 +27,7 @@ const Form = (props) => {
     (item) => `%0A%0A${item[0]}%0ACantidad: ${item[2]}%0ASubtotal: ${item[3]}`
   );
 
-  const phoneNumber = 1111111111;
+  const phoneNumber = 3132551353;
   let whatsappMessage = `Pedido a nombre de *${name}*%0A*Dirección:* ${address}%0A%0A*Resumen de la compra*${summary}%0A%0A*Total a pagar: ${totalPayment}*%0A%0A*Información adicional*%0A${
     message ? message : "Sin comentarios adicionales"
   }`;

@@ -12,6 +12,7 @@ import {
 } from "./filters.js";
 import "./Products.css";
 const Products = () => {
+  let navigate = useNavigate();
   const { id } = useParams();
   const {
     state: { products },
@@ -73,14 +74,13 @@ const Products = () => {
   const addToCart = (id) => {
     dispatch({ type: "ADD_TO_CART", payload: id });
   };
-  let navigate = useNavigate();
 
-  const handleChange = (sortSelected) => {
-    let productsSorted = sortbyPrice(info.productsShown, sortSelected);
-    setInfo({ ...info, productsShown: productsSorted });
-    console.log(sortSelected);
+  const sortPrice = (sortSelected) => {
+    setInfo({
+      ...info,
+      productsShown: sortbyPrice(info.productsShown, sortSelected),
+    });
   };
-
   return (
     <section className="Products">
       <h1 className="products__title title">{info.title}</h1>
@@ -108,7 +108,7 @@ const Products = () => {
       <select
         className="products__sort"
         name="sort"
-        onChange={(e) => handleChange(e.target.value)}
+        onChange={(e) => sortPrice(e.target.value)}
       >
         <option value="initial">---Ordenar por precio---</option>
         <option value="low">Menor a mayor</option>
