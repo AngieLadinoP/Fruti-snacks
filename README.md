@@ -10,7 +10,11 @@ Receive order information on whatsapp
 Application developed with <b>REACT</b> and styles with pure <b>CSS</b>.
 </p>
 
+<h4 align="center">
+  
 See live demo here: [fruti-snacks.netlify.app](https://fruti-snacks.netlify.app/)
+
+</h4>
 
 ![image](https://user-images.githubusercontent.com/95056296/157866326-9e441a5c-4248-41e0-8643-4ca4a4e4b0e6.png)
 
