@@ -1,19 +1,19 @@
-# Fruti Snacks
+<h1 align="center"> Fruti Snacks </h1>
 
-## Website to request home delivery of the company **FRUTI SNACKS**.
-
+<h3>Interactive interface that receives user inputs and delivers them to the company Fruti Snacks as a digital order.</h3>
+<p>
 View product catalog, filter by categories or visualize the information of each product.
-It has a cart that shows the summary of the purchase and allows you to edit the products added.
+It has a cart that shows the summary of the purchase and allows users to edit the products added.
+  </br>
 Receive order information on whatsapp
-Application developed with React and styles with pure css.
+</br>
+Application developed with <b>REACT</b> and styles with pure <b>CSS</b>.
+</p>
 
-See how it works in the [Fruti Snacks demo](https://fruti-snacks.netlify.app/).
+See live demo here: [fruti-snacks.netlify.app](https://fruti-snacks.netlify.app/)
 
----
+![image](https://user-images.githubusercontent.com/95056296/157866326-9e441a5c-4248-41e0-8643-4ca4a4e4b0e6.png)
 
----
-
----
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
